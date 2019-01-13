@@ -17,7 +17,7 @@ sudo docker-compose up
 
 the app runs on `localhost:8080`
 
-##Postman
+## Postman
 
 please find the postman json on postman/sayurbox_be.postman_collection.json
 Then for initiating fruit collection, use Create Fruit

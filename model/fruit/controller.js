@@ -58,6 +58,7 @@ class FruitController extends Controller {
                 }
             }
             for(var item in items){
+                var x = this.findByMatchingProperties(fruits, {name: items[item].name})
                 var updateCounter = 0;
                 // Quantity still available
                 // Update Fruit with quantity more than 0 condition

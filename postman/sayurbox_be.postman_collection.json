@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "cc790f99-db2c-4098-ae9f-44b772042857",
+		"name": "test01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "select items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"items\": [\n\t\t{\n\t\t\t\"name\" : \"apel\",\n\t\t\t\"quantity\": 2\n\t\t},\n\t\t{\n\t\t\t\"name\" : \"mangga\",\n\t\t\t\"quantity\": 2111\n\t\t}\n\t],\n\t\"customerID\": \"manda\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"items\": [\n\t\t{\n\t\t\t\"name\" : \"apel\",\n\t\t\t\"quantity\": 2\n\t\t},\n\t\t{\n\t\t\t\"name\" : \"mangga\",\n\t\t\t\"quantity\": 2000\n\t\t}\n\t],\n\t\"customerID\": \"manda\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Fruit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"mangga\",\n\t\"quantity\": 50\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Fruit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Fruit",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/5c39c7d0747dc426fa25a056",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						"5c39c7d0747dc426fa25a056"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Fruit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"mangga\",\n\t\"quantity\": 50\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fruit/5c3b78a3869b1065ba107a3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fruit",
+						"5c3b78a3869b1065ba107a3b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
